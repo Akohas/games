@@ -1,0 +1,22 @@
+
+.header
+	.wrapper
+		.header__mobile-block
+			.header__mobile-menu
+				svg
+					use(xlink:href="#mobile-menu")
+			.header__mobile-search
+				svg
+						use(xlink:href="#search-mobile")
+		.header__logo
+			a(href="#")
+				img(src="../../img/Games.png")
+		.header__nav
+			a(href="#").header__nav-item Игры
+			a(href="#").header__nav-item Приложения
+			a(href="#").header__nav-item Приколы
+			a(href="#").header__nav-item Обратная связь
+		.header__search
+			input(type="search" id="search" class="header__search-field" placeholder="search")
+			svg.header__search-icon
+				use(xlink:href="#search")

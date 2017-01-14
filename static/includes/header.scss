@@ -1,0 +1,108 @@
+
+
+.header{
+
+	font-size: 0;
+	background-color: $blue-color;
+	position: fixed;
+	z-index: 1000;
+	width: 100%;
+	@media(max-width: 767px){
+			text-align: center;
+			height: 66px;
+		}
+	&__mobile-block{
+		@media(min-width: 767px){
+			display: none !important;
+		}
+		
+	}
+	&__mobile-menu{
+		float: left;
+
+	}
+	&__mobile-menu svg{
+		width: 57px;
+		height: 57px;
+		margin-top: 5px;
+	}
+	&__mobile-menu svg use{
+		stroke: #fff;
+	}
+	&__mobile-search{
+		float: right;
+		margin-top: 17px;
+	
+	}
+	&__mobile-search svg{
+		width: 31px;
+		height: 31px;
+	}
+	&__mobile-search svg use{
+		stroke:#fff;
+	}
+	&__logo{
+		vertical-align: middle;
+		display: inline-block;
+		@media(max-width: 767px){
+			margin-top: 22px;
+			margin-left: -18px;
+		}
+		
+	}
+	&__nav{
+		vertical-align: middle;
+		font-size: 0px;
+		display: inline-block;
+		margin-left: 140px;
+		margin-right: 72px;
+		@media(max-width: 768px){
+			margin: 0;
+		}
+		@media(max-width: 767px){
+			display: none;
+		}
+	}
+	&__nav-item{
+		display: inline-block;
+		font-size: 17px;
+		color: #ffffff;
+		font-family: $open-sans, sans-serif;
+		padding: 21px 19px;
+		text-decoration: none;
+		transition: 0.2s;
+		font-weight: 400;
+		&:hover{
+			background-color: darken($blue-color, 10%);
+		}
+		
+	}
+	&__search{
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+		@media(max-width: 767px){
+			display: none;
+		}
+		
+	}
+	&__search-field{
+		width: 160px;
+		height: 26px;
+		outline: none;
+		border-radius: 50px;
+		border-style: none;
+		color: #000;
+		font-size: 15px;
+		padding-left: 15px;
+		
+	}
+	&__search-icon{
+		position: absolute;
+		width: 17px;
+		height: 17px;
+		right: 8px;
+		top: 6px;
+		
+	}
+}

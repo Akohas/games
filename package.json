@@ -1,0 +1,45 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "testCommon": "watchify ./js/main.js -d -o ./js/dist/common.js"
+  },
+  "browser": {
+    "jquery": "./js/modules/jquery.js",
+    "owl-carousel": "./bower_components/owl.carousel/dist/owl.carousel.js",
+    "rating": "./js/modules/rating.js"
+  },
+  "browserify-shim":{
+    "jquery": "$",
+    "owl-carousel": {
+      "exports": "owlCarousel",
+      "depends": [
+        "jquery:jQuery"
+      ]
+    }
+  },
+  "browserify":{
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^13.3.0",
+    "browserify-shim": "^3.8.12",
+    "fs": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^3.0.0",
+    "gulp-svg-sprite": "^1.3.6",
+    "gulp-svgmin": "^1.2.3",
+    "gulp-watch": "^4.3.11",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.8.0"
+  }
+}

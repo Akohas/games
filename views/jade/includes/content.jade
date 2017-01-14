@@ -1,0 +1,145 @@
+mixin game(image, name, author, star, section)
+	a(href="#" stars="#{star}" class="#{section} game-item")
+		.game-item__image
+			img(src="../../img/#{image}.png")
+		.game-item__name #{name} 
+		.game-item__author #{author}  
+		.game-item__rating.rating-js
+			svg.game-item__rating-star.star-js
+				use(xlink:href="#star")
+			svg.game-item__rating-star.star-js
+				use(xlink:href="#star" )
+			svg.game-item__rating-star.star-js
+				use(xlink:href="#star" )
+			svg.game-item__rating-star.star-js
+				use(xlink:href="#star" )
+			svg.game-item__rating-star.star-js
+				use(xlink:href="#star" )
+		object
+			a(href="#").game-item__download
+				svg.game-item__download-svg
+					use(xlink:href="#download")
+
+
+
+
+
+
+.popular-games
+	.wrapper
+		.content-block
+			.content-block__container
+				.popular-games__header.content-block__header Популярные игры
+				.popular-games__button-more.content-block__button-more.lg-button
+					button  все игры
+					svg
+						use(xlink:href="#button-arrow")
+				.popular-games__button-more.content-block__button-more.xs-button
+					button  все 
+					svg
+						use(xlink:href="#button-arrow")
+			.popular-games__items.content-block__items-list
+						
+				+game("fail", "Fail Hard", "Fingersoft", "5", "popular-games__item")
+				
+				+game("minions", "Minions Wather", "NBCUniversal Media", "4", "popular-games__item")
+
+				+game("craft", "World Craft 2", "Fun Free Game", "3", "popular-games__item")
+
+				+game("coin", "Coin Dozer", "Game Circus LLC", "4", "popular-games__item")
+
+				+game("ns", "NS Clan War ", "EMAGIST", "3", "popular-games__item")
+
+				+game("coin", "Coin Dozer", "Game Circus LLC", "4", "popular-games__item")
+
+				+game("coin", "Coin Dozer", "Game Circus LLC", "4", "popular-games__item xs-hidden")
+
+				+game("ns", "NS Clan War ", "EMAGIST", "3", "popular-games__item xs-hidden")
+
+				+game("coin", "Coin Dozer", "Game Circus LLC", "4", "popular-games__item sm-hidden")
+
+				+game("fail", "Fail Hard", "Fingersoft", "5", "popular-games__item sm-hidden")
+
+				+game("minions", "Minions Wather", "NBCUniversal Media", "4", "popular-games__item sm-hidden")
+
+				+game("craft", "World Craft 2", "Fun Free Game", "3", "popular-games__item sm-hidden")
+
+
+
+.useful-app
+	.wrapper
+		.content-block
+			.content-block__container
+				.useful-app__header.content-block__header Полезные приложения
+				.useful-app__button-more.content-block__button-more.lg-button
+					button  все приложения
+					svg
+						use(xlink:href="#button-arrow")
+				.popular-games__button-more.content-block__button-more.xs-button
+					button  все 
+					svg
+						use(xlink:href="#button-arrow")
+			.useful-app__items.content-block__items-list
+				+game("fail", "Fail Hard", "Fingersoft", "5", "useful-app__item")
+				
+				+game("minions", "Minions Wather", "NBCUniversal Media", "4", "useful-app__item")
+
+				+game("craft", "World Craft 2", "Fun Free Game", "3", "useful-app__item")
+
+				+game("coin", "Coin Dozer", "Game Circus LLC", "4", "useful-app__item xs-hidden")
+
+				+game("ns", "NS Clan War ", "EMAGIST", "3", "useful-app__item sm-hidden")
+
+				+game("coin", "Coin Dozer", "Game Circus LLC", "4", "useful-app__item sm-hidden")
+
+	
+
+.updating-block
+	.wrapper
+		.content-block
+			.content-block__container
+				.updating-block__header.content-block__header Обновления
+				.updating-block__button-more.content-block__button-more.lg-button
+					button  все обновления
+					svg
+						use(xlink:href="#button-arrow")
+				.popular-games__button-more.content-block__button-more.xs-button
+					button  все 
+					svg
+						use(xlink:href="#button-arrow")
+			.updating-block__items.content-block__items-list
+				+game("fail", "Fail Hard", "Fingersoft", "5", "updating-block__item")
+				
+				+game("minions", "Minions Wather", "NBCUniversal Media", "4", "updating-block__item")
+
+				+game("craft", "World Craft 2", "Fun Free Game", "3", "updating-block__item")
+
+				+game("coin", "Coin Dozer", "Game Circus LLC", "4", "updating-block__item xs-hidden")
+
+				+game("ns", "NS Clan War ", "EMAGIST", "3", "updating-block__item sm-hidden")
+
+				+game("coin", "Coin Dozer", "Game Circus LLC", "4", "updating-block__item sm-hidden")
+
+
+.jokes
+	.wrapper
+		.content-block
+			.content-block__container
+				.jokes__header.content-block__header Приколы
+				.jokes__button-more.content-block__button-more.lg-button
+					button  все приколы
+					svg
+						use(xlink:href="#button-arrow")
+				.popular-games__button-more.content-block__button-more.xs-button
+					button  все 
+					svg
+						use(xlink:href="#button-arrow")
+			.jokes__items
+				.jokes__item
+					p Если женщина легко соглашается прийти к вам домой, это ещё не значит, что она так же легко согласится уйти.
+				.jokes__item
+					p Мучаюсь вопросом "Что эффективнее - размещать резюме в Интернете или на стенах общественных туалетов?"
+				.jokes__item
+					p - С вас 250 рублей. Пакет нужен? <br> - Будете так шутить, я к вам больше стричься не приду.
+				.jokes__item
+					p - Мне, пожалуйста, двойной виски. <br>  - Девочка! Это школьная столовая! <br> - Ой, извините, я задумалась. Компот, пожалуйста...
