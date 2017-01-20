@@ -27,6 +27,9 @@
 		font-size: 23px;
 		font-weight: 700;
 		text-transform: uppercase;
+		@media screen and (max-width: 500px){
+			font-size: 20px;
+		}
 	}
 	&__button-more button{
 		border: none;
@@ -64,50 +67,46 @@
 
 
 .game-item{
-
-	width: 140px;
-	height: 227px;
 	border: 2px solid #ededed;
 	background-color: #ffffff;
 	padding: 10px 9px;
 	display: inline-block;
 	text-decoration: none;
 	position: relative;
-		@media( max-width: 329px){
-			&:nth-child(2n){
-					margin-right: 0px;
-			}
-			&:nth-child(-n + 2){
-				margin-top: 0;
-			}
-			margin-right: 10px;
-		}
-		@media screen and (min-width: 329px) and (max-width: 487px){
-			&:nth-child(2n){
-					margin-right: 0px;
-			}
-			&:nth-child(-n + 2){
-				margin-top: 0;
-			}
-				margin-right: 19px;			
-			}
-		@media screen and (min-width: 488px) and (max-width:649px){
+		@media (max-width:500px){
 			&:nth-child(3n){
 					margin-right: 0px;
 			}
 			&:nth-child(-n + 3){
 				margin-top: 0;
 			}
-				margin-right: 19px;
+				margin-right: 5%;
+				width: 30%;
+				font-size: 12px;
 		}
-		@media screen and (min-width:650px) and (max-width:939px){
+		@media screen and (min-width:501px) and (max-width:629px){
 			&:nth-child(4n){
 					margin-right: 0;
 			}
 			&:nth-child(-n + 4){
 				margin-top: 0;
 			}
-				margin-right: 20px;
+				margin-right: 4%;
+				width: 22%;
+				font-size: 13px;
+		}
+		@media screen and (min-width:630px) and (max-width:939px){
+			&:nth-child(5n){
+				margin-right: 0;
+			}
+			&:nth-child(-n + 5){
+			margin-top: 0;
+			}
+			width: 18%;
+			margin-right: 2.5%;
+			font-size: 14px;
+
+
 		}
 		@media(min-width:940px){
 			&:nth-child(6n){
@@ -117,38 +116,43 @@
 			margin-top: 0;
 			}
 			margin-right: 20px; 
+			width: 140px;
+			font-size: 17px;
 		}
 		margin-top: 21px;
 	
 	&:hover{
 		border: 2px solid $blue-color;
 	}
-	&__image{
-
+	&__image img{
+		width: 100%;
 	}
 	
 	&__name{
-		font-size: 17px;
+		font-size: 100%;
 		font-weight: 400;
 		font-family: $open-sans, sans-serif;
 		color: #212121;
-		padding-top: 13px;
+		height: 31px;
+    vertical-align: middle;
+    display: table-cell;
 
 	}
 	&__author{
 		color: #a1a1a1;
-		font-size: 13px;
+		font-size: 76%;
 		font-weight: 400;
 		font-family: $open-sans;
 		padding-top: 6px;
+		min-height: 34px;
 	}
 	&__rating{
 		z-index: 1000;
-		margin-top: 10px;
 		display: inline-block;
+		width: 80%;
 	}
 	&__rating-star{
-		width: 17px;
+		width: 20%;
 		height: 17px;
 		margin-left: -2px;
 	}
@@ -157,14 +161,16 @@
 	}
 
 	&__download-svg{
-		width: 19px;
+		width: 100%;
     height: 16px;
-    position: absolute;
-    right: 11px;
-    bottom: 20px;
 	}
 	&__download{
 		display: inline-block;
+    height: 19px;
+    width: 20%;
+    border: none;
+    padding: 0;
+    background: #fff;
 	}
 	
 }

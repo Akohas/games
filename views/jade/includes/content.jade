@@ -4,19 +4,19 @@ mixin game(image, name, author, star, section)
 			img(src="../../img/#{image}.png")
 		.game-item__name #{name} 
 		.game-item__author #{author}  
-		.game-item__rating.rating-js
-			svg.game-item__rating-star.star-js
-				use(xlink:href="#star")
-			svg.game-item__rating-star.star-js
-				use(xlink:href="#star" )
-			svg.game-item__rating-star.star-js
-				use(xlink:href="#star" )
-			svg.game-item__rating-star.star-js
-				use(xlink:href="#star" )
-			svg.game-item__rating-star.star-js
-				use(xlink:href="#star" )
-		object
-			a(href="#").game-item__download
+		.game-item__container
+			.game-item__rating.rating-js
+				svg.game-item__rating-star.star-js
+					use(xlink:href="#star")
+				svg.game-item__rating-star.star-js
+					use(xlink:href="#star" )
+				svg.game-item__rating-star.star-js
+					use(xlink:href="#star" )
+				svg.game-item__rating-star.star-js
+					use(xlink:href="#star" )
+				svg.game-item__rating-star.star-js
+					use(xlink:href="#star" )
+			button.game-item__download
 				svg.game-item__download-svg
 					use(xlink:href="#download")
 
@@ -42,7 +42,7 @@ mixin game(image, name, author, star, section)
 						
 				+game("fail", "Fail Hard", "Fingersoft", "5", "popular-games__item")
 				
-				+game("minions", "Minions Wather", "NBCUniversal Media", "4", "popular-games__item")
+				+game("minions", "Minions Wath", "NBCUniversal Media", "4", "popular-games__item")
 
 				+game("craft", "World Craft 2", "Fun Free Game", "3", "popular-games__item")
 
@@ -60,9 +60,9 @@ mixin game(image, name, author, star, section)
 
 				+game("fail", "Fail Hard", "Fingersoft", "5", "popular-games__item sm-hidden")
 
-				+game("minions", "Minions Wather", "NBCUniversal Media", "4", "popular-games__item sm-hidden")
+				+game("minions", "Minions Wath", "NBCUniversal Media", "4", "popular-games__item md-hidden")
 
-				+game("craft", "World Craft 2", "Fun Free Game", "3", "popular-games__item sm-hidden")
+				+game("craft", "World Craft 2", "Fun Free Game", "3", "popular-games__item md-hidden")
 
 
 
@@ -82,7 +82,7 @@ mixin game(image, name, author, star, section)
 			.useful-app__items.content-block__items-list
 				+game("fail", "Fail Hard", "Fingersoft", "5", "useful-app__item")
 				
-				+game("minions", "Minions Wather", "NBCUniversal Media", "4", "useful-app__item")
+				+game("minions", "Minions Wath", "NBCUniversal Media", "4", "useful-app__item")
 
 				+game("craft", "World Craft 2", "Fun Free Game", "3", "useful-app__item")
 
@@ -110,7 +110,7 @@ mixin game(image, name, author, star, section)
 			.updating-block__items.content-block__items-list
 				+game("fail", "Fail Hard", "Fingersoft", "5", "updating-block__item")
 				
-				+game("minions", "Minions Wather", "NBCUniversal Media", "4", "updating-block__item")
+				+game("minions", "Minions Wath", "NBCUniversal Media", "4", "updating-block__item")
 
 				+game("craft", "World Craft 2", "Fun Free Game", "3", "updating-block__item")
 

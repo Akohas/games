@@ -4,13 +4,25 @@
 
 
 .sm-hidden{
-	@media(max-width: 940px){
+	@media(max-width: 629px){
 		display: none !important;
 	}
 	
 	
 }
 
+.xs-hidden{
+	@media(max-width: 500px){
+		display: none !important;
+	}
+}
+
+
+.md-hidden{
+	@media (max-width:939px){
+		display: none !important;
+	}
+}
 .xs-button{
 	@media(min-width: 650px){
 		display: none;
@@ -29,11 +41,6 @@
 	}
 }
 
-.xs-hidden{
-	@media(max-width: 649px){
-		display: none !important;
-	}
-}
 
 .lg-slider{
 	@media(min-width: 500px){
@@ -60,10 +67,15 @@
 }
 
 
-.owl-prev svg{
-	width: 50px;
-	height: 50px;
+.lg-slider .owl-nav .owl-prev svg{
+	width: 44px;
+	height: 44px;
 	float: left;
+}
+.lg-slider .owl-nav .owl-next svg{
+	width: 44px;
+	height: 44px;
+	float: right;
 }
 .owl-prev svg use{
 	fill: #738b8b;
@@ -71,11 +83,21 @@
 .owl-next svg use{
 	fill: #738b8b;
 }
-.owl-next svg{
-	width: 50px;
-	height: 50px;
+
+.xs-slider .owl-nav .owl-prev svg{
+	width: 30px;
+	height: 30px;
+	float: left;
+}
+.xs-slider .owl-nav .owl-next svg{
+	width: 30px;
+	height: 30px;
 	float: right;
 }
+
+
+
+
 
 .owl-nav{
 	width: 940px;
@@ -99,7 +121,7 @@
 
 .slider{
 	padding-top: 61px;
-	@media(max-width: 767px){
+	@media(max-width: 500px){
 		padding-top: 66px;
 	}
 }
